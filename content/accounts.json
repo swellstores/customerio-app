@@ -1,0 +1,33 @@
+{
+  "collection": "accounts",
+  "views": [
+    {
+      "id": "list",
+      "bulk_actions": [
+        {
+          "id": "sync-selected",
+          "label": "Send to Customer.io",
+          "function": "sync-customers",
+          "loading_label": "Starting sync…",
+          "modal": {
+            "title": "Send to Customer.io",
+            "description": "Sends the selected customers to Customer.io with their current details. Customers who are already there are updated, never duplicated.",
+            "submit_label": "Send"
+          }
+        }
+      ]
+    },
+    {
+      "id": "edit",
+      "extra_actions": [
+        {
+          "id": "send-customer",
+          "label": "Send to Customer.io",
+          "function": "send-customer",
+          "loading_label": "Sending…",
+          "hint": "Sends this customer's current details to Customer.io now"
+        }
+      ]
+    }
+  ]
+}

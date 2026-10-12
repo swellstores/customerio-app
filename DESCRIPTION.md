@@ -1,0 +1,14 @@
+Send your store's customers and what they do to Customer.io as it happens: orders, shipments, abandoned carts and subscription changes. Your campaigns and segments run on live store data, so an abandoned-cart email, a shipping update or a renewal reminder goes out at the right moment.
+
+Connect a Customer.io workspace with its Site ID and API key. The data center, US or EU, is found from the keys. Data flows one way, from Swell to Customer.io, and the app only reads your store.
+
+- **Customers become people.** Every customer, guests included, becomes a person with their email, name, phone, location, marketing consent, order count, total spent and first and last order dates. The profile is updated whenever the customer changes.
+- **Every order event.** Order Completed, Paid, Payment Failed, Shipped, Fulfilled, Refunded and Cancelled, with totals, currency, coupon and the products: names, SKUs, variants, prices, quantities and images. Order Shipped carries the carrier and tracking code, and Order Refunded is sent for full refunds.
+- **Abandoned carts, ready to recover.** Cart Abandoned arrives with the cart's products and totals, and the link that brings the shopper back to it.
+- **Subscriptions, start to finish.** Subscription Started, Paid, Payment Failed, Payment Expiring, Trial Ending, Paused, Resumed, Cancelled and Completed.
+- **The customer comes first.** Every event arrives together with its customer, so a campaign never starts for a person Customer.io doesn't know yet.
+- **Each event once.** A delivery that Swell repeats keeps its event ID, so Customer.io ignores the duplicate. If Customer.io is unavailable, deliveries are retried for up to 48 hours and keep the time they happened.
+- **Consent stays in your hands.** A person is unsubscribed or resubscribed only when the customer changes their marketing consent in your store, so an unsubscribe made through a Customer.io message is never undone. Every person also carries an `email_optin` attribute. Customers who haven't opted in arrive with it set to false, so add "email_optin is true" to your marketing campaigns.
+- **An email if your keys stop working.** The store's administrators are told, and the events of the last 48 hours are delivered after the keys are corrected.
+
+Setup takes a minute. In Customer.io, copy the Site ID and API key from Settings → API credentials → Track API keys. Paste both into the app settings, save, choose Test connection, then turn on Send data to Customer.io. To send the customers you already have, choose Sync existing customers in the Actions menu. Your test and live environments have separate settings, so you can try the app with a test workspace first. If Customer.io sends your abandoned-cart or order emails, turn off the matching Swell notifications so customers don't get both.

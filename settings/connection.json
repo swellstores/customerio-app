@@ -1,0 +1,66 @@
+{
+  "label": "Connection",
+  "description": "Connect your Customer.io workspace. Find the Site ID and API key in Customer.io under Settings → API credentials → Track API keys.",
+  "fields": [
+    {
+      "id": "site_id",
+      "label": "Site ID",
+      "type": "short_text",
+      "admin_span": 2
+    },
+    {
+      "id": "api_key",
+      "label": "API key",
+      "type": "secret",
+      "admin_span": 2
+    },
+    {
+      "id": "region",
+      "label": "Data center",
+      "type": "select",
+      "description": "Found automatically from your keys.",
+      "options": [
+        {
+          "value": "us",
+          "label": "United States"
+        },
+        {
+          "value": "eu",
+          "label": "European Union"
+        }
+      ],
+      "admin_span": 2,
+      "readonly": true,
+      "placeholder": "Found on first use"
+    },
+    {
+      "id": "test-connection",
+      "label": "Test connection",
+      "type": "action",
+      "function": "test-connection",
+      "loading_label": "Testing…",
+      "hint": "Checks the saved Site ID and API key with Customer.io"
+    },
+    {
+      "id": "enabled",
+      "label": "Send data to Customer.io",
+      "type": "toggle",
+      "description": "While this is on, customers and their order, shipment, cart and subscription events are sent to your workspace as they happen.",
+      "default": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "sync-customers",
+      "label": "Sync existing customers",
+      "function": "sync-customers",
+      "loading_label": "Starting sync…",
+      "hint": "Sends every customer of this store to Customer.io",
+      "modal": {
+        "title": "Sync existing customers",
+        "description": "Sends every customer of this store to Customer.io as a person, with their current details. Customers who are already there are updated, never duplicated, and nobody's subscription status is changed. New and changed customers are sent automatically, so you only need this once.",
+        "submit_label": "Start sync"
+      }
+    }
+  ]
+}

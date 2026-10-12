@@ -1,0 +1,38 @@
+{
+  "label": "Delivery issues",
+  "description": "Open problems that stop data from reaching Customer.io. A new record sends the store's administrators an email.",
+  "name_field": "message",
+  "fields": {
+    "key": {
+      "type": "string",
+      "label": "Key",
+      "description": "Identifies the problem. A repeat updates the same record.",
+      "required": true,
+      "unique": true
+    },
+    "message": {
+      "type": "string",
+      "label": "Problem",
+      "required": true
+    },
+    "source": {
+      "type": "string",
+      "label": "Met while handling",
+      "description": "The store event or app action that met the problem."
+    },
+    "count": {
+      "type": "int",
+      "label": "Times seen",
+      "default": 1
+    },
+    "date_last_seen": {
+      "type": "date",
+      "label": "Last seen"
+    },
+    "app_id": {
+      "type": "string",
+      "label": "App",
+      "description": "The app's record id in this store. The notification email links to the app's page with it."
+    }
+  }
+}

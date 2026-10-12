@@ -1,0 +1,42 @@
+{
+	"id": "customerio",
+	"name": "Customer.io",
+	"type": "integration",
+	"version": "0.9.0",
+	"description": "Send customers, orders, carts and subscriptions to Customer.io",
+	"support_email": "support@swell.is",
+	"images": [
+		{
+			"id": "events",
+			"image_src": "assets/images/1-events.png",
+			"title": "Every store event, in Customer.io",
+			"description": "Orders, shipments, abandoned carts and subscriptions reach Customer.io as they happen, each tied to the customer's profile."
+		},
+		{
+			"id": "profiles",
+			"image_src": "assets/images/2-profiles.png",
+			"title": "Profiles that stay current",
+			"description": "Every customer becomes a person with contact details, marketing consent, order count and total spent, updated on each change."
+		},
+		{
+			"id": "carts",
+			"image_src": "assets/images/3-carts.png",
+			"title": "Abandoned carts, ready to recover",
+			"description": "Cart Abandoned arrives with the products, prices, images and the link that brings the shopper back to their cart."
+		},
+		{
+			"id": "setup",
+			"image_src": "assets/images/4-setup.png",
+			"title": "Set up in a minute",
+			"description": "Paste your Site ID and API key, test the connection and switch it on. One action sends the customers you already have."
+		}
+	],
+	"permissions": [
+		"read_accounts",
+		"read_orders",
+		"read_carts",
+		"read_subscriptions",
+		"read_shipments",
+		"read_products"
+	]
+}
