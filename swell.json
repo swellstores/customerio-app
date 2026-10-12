@@ -5,6 +5,8 @@
 	"version": "1.0.0",
 	"description": "Send customers, orders, carts and subscriptions to Customer.io",
 	"support_email": "support@swell.is",
+	"documentation_url": "https://developers.swell.is/app-guides/customerio",
+	"price_external": true,
 	"repository_url": "https://github.com/swellstores/customerio-app",
 	"images": [
 		{
