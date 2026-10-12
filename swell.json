@@ -2,7 +2,7 @@
 	"id": "customerio",
 	"name": "Customer.io",
 	"type": "integration",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Send customers, orders, carts and subscriptions to Customer.io",
 	"support_email": "support@swell.is",
 	"documentation_url": "https://developers.swell.is/app-guides/customerio",
