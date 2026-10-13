@@ -25,7 +25,7 @@ export default async function (req: SwellRequest) {
   } catch (err) {
     if (err instanceof CustomerioError && err.kind === "credentials") {
       throw new SwellError(
-        "Customer.io did not accept the Site ID and API key. Copy both again from Settings → API credentials → Track API keys in Customer.io.",
+        "Customer.io did not accept the Site ID and API key. Copy both again from Account Settings → API Credentials → Track API keys in Customer.io.",
         { status: 400 },
       );
     }

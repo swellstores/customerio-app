@@ -17,7 +17,7 @@
                 <p style="margin:0 0 16px;font-size:15px;line-height:24px;">Until this is corrected, customers and their order, cart and subscription events do not reach your Customer.io workspace, and campaigns that depend on them do not start.</p>
                 <p style="margin:0 0 8px;font-size:15px;line-height:24px;font-weight:600;">To fix it</p>
                 <ol style="margin:0 0 24px;padding-left:20px;font-size:15px;line-height:24px;">
-                  <li>In Customer.io, open Settings → API credentials → Track API keys and copy the Site ID and API key.</li>
+                  <li>In Customer.io, open Account Settings → API Credentials → Track API keys and copy the Site ID and API key.</li>
                   <li>In Swell, open Apps → Customer.io → Settings, paste both values and save.</li>
                   <li>Press Test connection.</li>
                 </ol>

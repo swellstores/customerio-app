@@ -6,7 +6,7 @@ A Swell integration app that keeps a Customer.io workspace supplied with a store
 
 ### What you need from Customer.io
 
-A Customer.io account and the workspace's Track API keys: **Settings → API credentials → Track API keys**, Site ID and API key.
+A Customer.io account and the workspace's Track API keys: **Account Settings → API Credentials → Track API keys**, Site ID and API key.
 
 The app relies on two workspace settings, both Customer.io defaults: people are identified by `id`, and "Reference people by" is "cio_id or id", so an email changed in Swell reaches the same person.
 
@@ -82,7 +82,7 @@ Every event is sent together with its person, so a campaign never starts for som
 | `subscription.activated` | Subscription Started | Also when a canceled subscription is restored |
 | `subscription.paid` | Subscription Paid | Each paid billing cycle |
 | `subscription.payment_failed` | Subscription Payment Failed | |
-| `subscription.payment_expiring` | Subscription Payment Expiring | |
+| `subscription.payment_expiring` | Subscription Payment Expiring | Swell does not raise this event today, so it never arrives |
 | `subscription.trial_will_end` | Subscription Trial Ending | |
 | `subscription.paused`, `subscription.resumed` | Subscription Paused, Subscription Resumed | |
 | `subscription.canceled` | Subscription Cancelled | |

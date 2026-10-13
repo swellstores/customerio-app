@@ -1,6 +1,6 @@
 {
   "label": "Connection",
-  "description": "Connect your Customer.io workspace. Find the Site ID and API key in Customer.io under Settings → API credentials → Track API keys.",
+  "description": "Connect your Customer.io workspace. Find the Site ID and API key in Customer.io under Account Settings → API Credentials → Track API keys.",
   "fields": [
     {
       "id": "site_id",
