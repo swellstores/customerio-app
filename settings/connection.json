@@ -6,12 +6,14 @@
       "id": "site_id",
       "label": "Site ID",
       "type": "short_text",
+      "required": true,
       "admin_span": 2
     },
     {
       "id": "api_key",
       "label": "API key",
       "type": "secret",
+      "required": true,
       "admin_span": 2
     },
     {
