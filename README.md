@@ -181,4 +181,4 @@ swell api put '/:functions/<function id>' --body '{"$action":{"id":"test-connect
 
 ## License
 
-[MIT](LICENSE.md)
+Swell App License. See [LICENSE](LICENSE).
